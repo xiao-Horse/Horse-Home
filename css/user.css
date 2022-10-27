@@ -1,0 +1,330 @@
+.xtx-user {
+    background-color: #f5f5f5;
+    padding-top: 20px;
+}
+
+.xtx-user-l {
+    float: left;
+    width: 224px;
+    height: 1120px;
+    background-color: #fff;
+}
+
+.xtx-user-l h4 {
+    height: 58px;
+    line-height: 58px;
+    font-size: 16px;
+    color: #333;
+    font-weight: 400;
+    margin-left: 52px;
+}
+
+.xtx-user-l ul li {
+    position: relative;
+    width: 100%;
+    height: 41px;
+    line-height: 41px;
+    font-size: 14px;
+}
+
+.xtx-user-l ul li a {
+    display: block;
+    width: 100%;
+    height: 41px;
+    padding-left: 52px;
+    transition: all 0.3s;
+}
+
+.xtx-user-l ul li::after {
+    position: absolute;
+    top: 18px;
+    left: 36px;
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background-color: #5cb99e;
+    transition: all 0.3s;
+}
+
+.xtx-user-l ul li a:hover {
+    color: #5cb99e;
+}
+
+.xtx-user-l ul li:hover::after {
+    width: 6px;
+    height: 6px;
+}
+
+.zhanghu {
+    margin-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #f4f4f4;
+}
+
+.xtx-user-l .zhanghu:last-child {
+    border-bottom: 0;
+}
+
+.xtx-user-r {
+    float: right;
+    width: 996px;
+}
+
+.xtx-user-r .touxian {
+    width: 100%;
+    height: 132px;
+    background: url(../uploads/touxian.jpg) no-repeat;
+    padding-top: 23px;
+    margin-bottom: 20px;
+}
+
+.touxian .zxh {
+    float: left;
+    width: 164px;
+    height: 86px;
+    margin-left: 59px;
+}
+
+.touxian .zxh img {
+    width: 85px;
+    height: 86px;
+    vertical-align: middle;
+    margin-right: 26px;
+}
+
+.touxian .zxh span {
+    font-style: 18px;
+    color: #fff;
+}
+
+.shezhi {
+    float: right;
+    margin-top: 14px;
+    margin-right: 53px;
+}
+
+.shezhi ul li {
+    float: left;
+    width: 64px;
+    height: 61px;
+    margin-left: 107px;
+}
+
+.shezhi .huiyuan {
+    width: 32px;
+    height: 29px;
+    background-color: pink;
+    margin: 0 auto;
+    margin-bottom: 12px;
+}
+
+.shezhi h4 {
+    font-style: 16px;
+    color: #fff;
+    font-weight: 400;
+}
+
+.xtx-user-r .dindan {
+    height: 374px;
+    background-color: #fff;
+    padding: 0 13px;
+    margin-bottom: 20px;
+}
+
+.dindan-hd {
+    height: 60px;
+    line-height: 60px;
+}
+
+.dindan-hd h4 {
+    float: left;
+    font-size: 19px;
+    color: #333;
+    font-weight: 400;
+}
+
+.dindan-hd a {
+    float: right;
+    display: inline-block;
+    color: #999999;
+}
+
+.dindan-hd a::after {
+    content: '';
+    display: inline-block;
+    width: 7px;
+    height: 13px;
+    background: url(../img/sprites.png) no-repeat -1px -109px;
+    margin-left: 6px;
+}
+
+.dindan-one {
+    height: 137px;
+}
+
+.dindan-one img {
+    float: left;
+    width: 107px;
+    height: 107px;
+    margin-left: 12px;
+    margin-top: 16px;
+}
+
+
+.dindan-one .biaoti {
+    display: inline-block;
+    float: left;
+    width: 214px;
+    height: 39px;
+    margin-left: 10px;
+    margin-top: 49px;
+}
+
+.dindan-one .biaoti p:first-child {
+    font-size: 16px;
+    color: #333;
+}
+
+.dindan-one .biaoti p:last-child {
+    font-size: 14px;
+    color: #999999;
+}
+
+.dindan-one {
+    border: 1px solid #e8e8e8;
+    margin-bottom: 20px;
+}
+
+.dindan-one ul {
+    float: right;
+}
+
+.dindan-one ul li {
+    float: left;
+    width: 198px;
+    height: 135px;
+    line-height: 137px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.dindan-one ul li:nth-child(1) {
+    color: #e05e30;
+    padding: 52px 0;
+}
+
+.dindan-one ul li:nth-child(1) p {
+    height: 14px;
+    line-height: 14px;
+    margin: 10px 0;
+}
+
+.p1 {
+    color: #999999;
+}
+
+.dindan-one ul li:nth-child(2) {
+    border-left: 1px solid #e8e8e8;
+    border-right: 1px solid #e8e8e8;
+    padding: 34px 0;
+}
+
+.dindan-one ul li:nth-child(2) p {
+    height: 14px;
+    font-size: 14px;
+    line-height: 14px;
+    margin: 6px 0;
+}
+
+.dindan-one ul li:nth-child(2) p:first-child {
+    color: #9a2e1f;
+}
+
+.dindan-one ul li:nth-child(3) {
+    padding-top: 28px;
+    padding-bottom: 26px;
+}
+
+.dindan-one ul li:nth-child(3) a:first-child {
+    width: 100px;
+    height: 31px;
+    background-color: #5cb99e;
+    text-align: center;
+    line-height: 31px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.dindan-one ul li:nth-child(3) a {
+    display: block;
+    height: 14px;
+    line-height: 14px;
+    margin-bottom: 9px;
+    font-size: 14px;
+}
+
+.shoucang {
+    width: 996px;
+    /* height: 408px; */
+    background-color: #fff;
+    padding: 0 13px;
+    margin-bottom: 20px;
+}
+
+.shoucang .dindan-hd {
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.shoucang ul {
+    margin-top: 20px;
+}
+
+.shoucang ul li {
+    position: relative;
+    float: left;
+    width: 242px;
+    height: 304px;
+}
+
+.shanchu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 23px;
+    height: 23px;
+    text-align: center;
+    line-height: 23px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+    color: #fff;
+}
+
+.shoucang ul li img {
+    display: block;
+    width: 184px;
+    height: 184px;
+    margin: 0 auto;
+    margin-top: 8px;
+    margin-bottom: 12px;
+}
+
+.shoucang ul li h4 {
+    width: 192px;
+    height: 54px;
+    margin: 0 auto;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.shoucang ul li p {
+    margin-left: 23px;
+    font-size: 22px;
+    color: #9a2e1f;
+}
+
+.shoucang ul li p span {
+    font-size: 17px;
+}

@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>注册</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!-- 引入初始化文件 -->
+    <link rel="stylesheet" href="./css/base.css">
+    <!-- 公共样式表 -->
+    <link rel="stylesheet" href="./css/common.css">
+    <!-- 引入注册页面的css文件 -->
+    <link rel="stylesheet" href="./css/register.css">
+</head>
+
+<body>
+    <!-- 头部模块开始 -->
+    <header>
+        <!-- 快捷导航 -->
+        <div class="xtx-shortcut">
+            <div class="container">
+                <ul>
+                    <li><a href="#">请先登录</a></li>
+                    <li><a href="./register.html">免费注册</a></li>
+                    <li><a href="#">我的订单</a></li>
+                    <li><a href="#">会员中心</a></li>
+                    <li><a href="#">帮助中心</a></li>
+                    <li><a href="#">在线客服</a></li>
+                    <li><a href="#"><span></span>手机版</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- 导航栏 -->
+        <div class="xtx-main-nav container">
+            <div class="logo">
+                <h1><a href="./index.html" title="小兔鲜">小兔鲜</a></h1>
+            </div>
+            <div class="nav">
+                <ul>
+                    <li><a href="#">首页</a></li>
+                    <li><a href="#">生鲜</a></li>
+                    <li><a href="#">美食</a></li>
+                    <li><a href="#">餐厨</a></li>
+                    <li><a href="#">电器</a></li>
+                    <li><a href="#">居家</a></li>
+                    <li><a href="#">洗护</a></li>
+                    <li><a href="#">孕婴</a></li>
+                    <li><a href="#">服装</a></li>
+                </ul>
+            </div>
+            <a href="#" class="gwc">
+                <span>2</span>
+            </a>
+            <div class="search">
+                <input type="text" placeholder="搜一搜">
+            </div>
+        </div>
+    </header>
+    <!-- 头部模块结束 -->
+    <!-- 注册表模块开始 -->
+    <div class="register container">
+        <h1>新用户注册</h1>
+        <form action="">
+            <div class="box">
+                <div>
+                    <input type="text" name="uname" placeholder="设置用户名称" class="inputtxt">
+                    <span></span>
+                </div>
+                <div>
+                    <input type="text" name="phone" placeholder="输入手机号码" class="inputtxt">
+                    <span></span>
+                </div>
+                <div>
+                    <input type="text" name="yanzhengma" placeholder="短信验证码" class="yanzhengma inputtxt">
+                    <span></span>
+                </div>
+                <i>发送验证码</i>
+                <div>
+                    <input type="password" name="password" placeholder="设置6到20位字母，数字和符号组合" class="inputtxt">
+                    <span></span>
+                </div>
+                <div>
+                    <input type="password" name="xpassword" placeholder="请再次输入上面的密码" class="inputtxt">
+                    <span></span>
+                </div>
+                <div class="yhfw">
+                    <input type="checkbox" name="" id="checkbox">已阅读并同意<a href="#">《用户服务协议》</a>
+                    <span></span>
+                </div>
+                <button class="submit">下一步</button>
+            </div>
+        </form>
+    </div>
+    <!-- 注册表模块结束-->
+    <!-- 底部模块开始 -->
+    <footer>
+
+        <!-- 底部头模块开始 -->
+        <div class="footer-h">
+            <div class="xtx-contact container">
+                <div class="khfw">
+                    <h4>客户服务</h4>
+                    <a href="#">在线客服</a>
+                    <a href="#">问题反馈</a>
+                </div>
+                <div class="khfw">
+                    <h4>关注我们</h4>
+                    <a href="#" class="gzh">公众号</a>
+                    <a href="#" class="wb">微博</a>
+                </div>
+                <div class="xz">
+                    <h4>下载APP</h4>
+                    <div class="ewm"><img src="./uploads/qrcode.png" alt=""></div>
+                    <div class="wz">
+                        <p>扫描二维码</p>
+                        <p>立马下载APP</p>
+                    </div>
+                    <a href="#">下载页面</a>
+                </div>
+                <div class="fwrx">
+                    <h4>服务热线</h4>
+                    <h3>400-0000-000</h3>
+                    <p>周一至周日 8:00-18:00</p>
+                </div>
+            </div>
+        </div>
+        <!-- 底部头模块结束 -->
+
+        <!-- 底部尾模块开始 -->
+        <div class="footer-bd">
+            <div class="xtx-service">
+                <h1>价格亲民</h1>
+                <h1>物流快捷</h1>
+                <h1>品质新鲜</h1>
+            </div>
+            <div class="xtx-copyright">
+                <p>
+                    <a href="#">关于我们</a> |
+                    <a href="#">帮助中心</a> |
+                    <a href="#">售后服务</a> |
+                    <a href="#">配送与验收</a> |
+                    <a href="#">商务合作</a> |
+                    <a href="#">搜索推荐</a> |
+                    <a href="#">友情链接</a>
+                </p>
+                <p>CopyRight @ 小兔鲜儿</p>
+            </div>
+        </div>
+        <!-- 底部尾模块结束 -->
+
+    </footer>
+    <!-- 底部模块结束 -->
+    <script>
+        (function () {
+            // 需求: 发送验证码
+            // 用户点击之后,显示 05 秒后重新获取
+            // 时间到了 , 自动改为 重新获取
+            let yanzhengma = document.querySelector('i');
+            yanzhengma.addEventListener('click', function () {
+                let i = 5;
+                let timer = setInterval(function fn() {
+                    yanzhengma.innerHTML = `${i}秒后重新发送`
+                    if (i == 0) {
+                        yanzhengma.innerHTML = `重新发送`;
+                        clearInterval(timer);
+                    }
+                    i--;
+                }, 1000)
+            })
+        }());
+
+
+        (function () {
+            // 用户名验证(注意封装函数  verifyxxx)
+            // 正则 /^[a-zA-Z0-9-_]{6,10}$/
+            // 如果不符合要求，则出现提示信息 并 return false
+            // 否则 则返回 return true
+            // 之所以返回 布尔值 ,是为了 最后的提交按钮做准备
+            let uname = document.querySelector('[name=uname]');
+            function verifyuname() {
+                let span = uname.nextElementSibling;
+                let reg = /^[a-zA-Z0-9-_]{6,10}$/;
+                if (reg.test(uname.value)) {
+                    span.className = 'yes';
+                    span.innerHTML = '正确';
+                    return true;
+                } else {
+                    span.className = 'no';
+                    span.innerHTML = '错误';
+                    return false;
+                }
+            }
+            uname.addEventListener('change', verifyuname);
+
+
+
+            // 手机号验证
+            // 正则：/^1(3\d|4[5-9]|5[0-35-9]|6[567]|7[0-8]|8\d|9[0-35-9])\d{8}$/
+            let phone = document.querySelector('[name=phone]');
+            function verifyphone() {
+                let span = phone.nextElementSibling;
+                let reg = /^1(3\d|4[5-9]|5[0-35-9]|6[567]|7[0-8]|8\d|9[0-35-9])\d{8}$/;
+                if (reg.test(phone.value)) {
+                    span.className = 'yes';
+                    span.innerHTML = '正确';
+                    return true;
+                } else {
+                    span.className = 'no';
+                    span.innerHTML = '错误';
+                    return false;
+                }
+            }
+            phone.addEventListener('change', verifyphone);
+
+
+
+            // 验证码验证
+            // 正则 /^\d{6}$/
+            let yanzhengma = document.querySelector('[name=yanzhengma]');
+            function verifyyanzhengma() {
+                let span = yanzhengma.nextElementSibling;
+                let reg = /^\d{6}$/;
+                if (reg.test(yanzhengma.value)) {
+                    span.className = 'yes';
+                    span.innerHTML = '正确';
+                    return true;
+                } else {
+                    span.className = 'no';
+                    span.innerHTML = '错误';
+                    return false;
+                }
+            }
+            yanzhengma.addEventListener('change', verifyyanzhengma);
+
+
+
+
+            // 密码验证
+            // 正则 /^ [a-zA-Z0-9-_]{6,20}$/
+            let password = document.querySelector('[name=password]');
+            function verifypassword() {
+                let span = password.nextElementSibling;
+                let reg = /^[a-zA-Z0-9-_]{6,20}$/;
+                if (reg.test(password.value)) {
+                    span.className = 'yes';
+                    span.innerHTML = '正确';
+                    return true;
+                } else {
+                    span.className = 'no';
+                    span.innerHTML = '错误';
+                    return false;
+                }
+            }
+            password.addEventListener('change', verifypassword);
+
+
+
+
+            // 再次密码验证
+            let xpassword = document.querySelector('[name=xpassword]');
+            function verifyxpassword() {
+                let span = xpassword.nextElementSibling;
+
+                if (password.value == xpassword.value) {
+                    span.className = 'yes';
+                    span.innerHTML = '正确';
+                    return true;
+                } else {
+                    span.className = 'no';
+                    span.innerHTML = '错误';
+                    return false;
+                }
+            }
+            xpassword.addEventListener('change', verifyxpassword);
+
+
+
+
+            // 验证checked有没有勾选
+            let checkboxs = document.querySelector('[type=checkbox]')
+            function verifycheckboxs() {
+                let span = checkboxs.nextElementSibling.nextElementSibling;
+                if (checkboxs.checked) {
+                    span.className = 'yes';
+                    span.innerHTML = '正确';
+                    return true
+                } else {
+                    span.className = 'no';
+                    span.innerHTML = '错误';
+                    return false
+                }
+            }
+            checkboxs.addEventListener('click', verifycheckboxs)
+
+
+
+
+            // 提交时验证（提交的是form，所以要给form绑定submit事件
+            let form = document.querySelector('form');
+            form.addEventListener('submit', function (e) {
+                // if括号里面要是true才能执行下面的语句
+                // verifyuname 默认是 false ,
+                // !verifyuname 就为 true
+                // !verifyuname 如果为 true 就阻止表单提交
+
+                if (!verifyuname()) {
+                    e.preventDefault();
+                }
+                if (!verifyphone()) {
+                    e.preventDefault();
+                }
+                if (!verifyyanzhengma()) {
+                    e.preventDefault();
+                }
+                if (!verifypassword()) {
+                    e.preventDefault();
+                }
+                if (!verifycheckboxs()) {
+                    e.preventDefault();
+                }
+            })
+        }())
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,130 @@
+/* 头部模块开始 */
+
+.xtx-main-nav .go {
+    float: right;
+    margin-top: 51px;
+}
+
+.xtx-main-nav .go i {
+    color: #60a394;
+    font-weight: 700;
+}
+
+/* 头部模块结束 */
+.center {
+    position: relative;
+    height: 488px;
+    background: url(../uploads/login-bg.png);
+}
+
+.center .login {
+    position: absolute;
+    top: 59px;
+    right: 458px;
+    width: 382px;
+    height: 360px;
+    background-color: #fff;
+    padding: 34px;
+}
+
+.login-one {
+    display: flex;
+    height: 25px;
+    justify-content: space-between;
+    font-size: 18px;
+    margin-bottom: 13px;
+}
+
+.login-one .xz {
+    padding-bottom: 25px;
+    border-bottom: 4px solid #72baac;
+}
+
+.login-two {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 10px;
+    margin-bottom: 13px;
+}
+
+.login-two a {
+    color: #72baac;
+}
+
+.login-three {
+    width: 316px;
+}
+
+.login-three-one {
+    display: flex;
+    /* justify-content: ; */
+    width: 316px;
+    height: 35px;
+    border: 2px solid #72baac;
+
+}
+
+.login-three-one i {
+    display: inline-block;
+    width: 35px;
+    height: 100%;
+    background-color: #d0cbcd;
+}
+
+.login-three-one input {
+    flex: 1;
+    padding-left: 20px;
+}
+
+.login-three span {
+    display: block;
+    width: 100%;
+    height: 20px;
+}
+
+.login-four {
+    margin-bottom: 15px;
+}
+
+.login-four span {
+    color: #ccc;
+}
+
+.login-four span a {
+    color: #60a394;
+}
+
+button {
+    width: 316px;
+    height: 35px;
+    background-color: #45b99a;
+    color: #fff;
+    border: 0;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+.login-five {
+    display: flex;
+    justify-content: space-between;
+}
+
+.yes {
+    color: #52c69b;
+}
+
+.no {
+    color: red;
+}
+
+/* 底部尾模块开始 */
+.footer-bd {
+    height: 300px;
+    background-color: #fff;
+}
+
+.footer-bd .xtx-copyright {
+    padding-top: 20px;
+}
+
+/* 底部尾模块结束 */

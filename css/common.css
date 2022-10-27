@@ -1,0 +1,379 @@
+/* 里面写公共的头部和底部 */
+/* 版心 */
+.container {
+    width: 1240px;
+    margin: 0 auto;
+}
+
+/* 头部模块 */
+.xtx-shortcut {
+    height: 52px;
+    background-color: #333333;
+}
+
+.xtx-shortcut .container ul {
+    float: right;
+    margin-top: 19px;
+}
+
+.xtx-shortcut .container ul li {
+    float: left;
+    border-right: 1px solid #5a5a5a;
+    padding: 0 20px;
+}
+
+.xtx-shortcut .container ul li:last-child {
+    border-right: 0;
+    /* width: 73px; */
+    padding-right: 0;
+}
+
+.xtx-shortcut .container ul li a {
+    display: block;
+    /* width: 88px; */
+    text-align: center;
+    font-size: 14px;
+    color: #dcdcdc;
+}
+
+.xtx-shortcut .container ul li a:hover {
+    color: #fff;
+}
+
+.xtx-shortcut .container ul li a span {
+    display: inline-block;
+    width: 11px;
+    height: 16px;
+    margin-right: 6px;
+    margin-top: -3px;
+    /* 图片和文字居中对齐 */
+    vertical-align: middle;
+    background: url(../img/sprites.png) no-repeat -160px -70px;
+}
+
+.xtx-main-nav {
+    height: 70px;
+    margin: 30px auto;
+}
+
+.logo {
+    float: left;
+    width: 207px;
+    height: 70px;
+    background: url(../img/logo.png) no-repeat;
+    background-size: 100%;
+    margin-left: 25px;
+    margin-right: 40px;
+}
+
+.logo h1 a {
+    display: block;
+    width: 100%;
+    height: 70px;
+    /* 隐藏文字 */
+    /* text-indent: -9999em;
+    overflow: hidden; */
+    font-size: 0;
+}
+
+.nav ul li {
+    float: left;
+    margin-right: 48px;
+    margin-top: 26px;
+
+}
+
+.nav ul li a {
+    font-size: 16px;
+    padding-bottom: 7px;
+
+}
+
+.nav ul li a:hover {
+    color: #27ba9b;
+    border-bottom: 1px solid #27ba9b;
+}
+
+.search {
+    position: relative;
+    float: right;
+    width: 173px;
+    height: 30px;
+    margin-top: 22px;
+    border-bottom: 1px solid #cccccc;
+    margin-right: 15px;
+}
+
+.search::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+    width: 18px;
+    height: 18px;
+    background: url(../img/sprites.png) no-repeat -79px -69px;
+    margin-top: 5px;
+}
+
+.search input {
+    float: left;
+    width: 150px;
+    height: 100%;
+    padding-left: 31px;
+}
+
+.search input::placeholder {
+    color: #cccccc;
+}
+
+.gwc {
+    position: relative;
+    float: right;
+    width: 23px;
+    height: 23px;
+    background: url(../img/sprites.png) no-repeat -119px -70px;
+    margin-top: 27px;
+}
+
+.gwc span {
+    position: absolute;
+    top: -5px;
+    left: 15px;
+    height: 14px;
+    background-color: #e26237;
+    color: #fff;
+    font-size: 13px;
+    text-align: center;
+    line-height: 14px;
+    border-radius: 7px;
+    padding: 0 5px;
+}
+
+/* 底部模块 */
+/* 底部头模块开始 */
+.footer-h {
+    height: 302px;
+    padding-top: 79px;
+}
+
+/* 客户服务模块 */
+.xtx-contact .khfw {
+    float: left;
+    width: 25%;
+    height: 143px;
+    text-align: center;
+}
+
+.xtx-contact h4 {
+    margin-bottom: 28px;
+    color: #999999;
+    font-size: 16px;
+}
+
+.khfw a {
+    position: relative;
+    float: left;
+    width: 93px;
+    height: 92px;
+    border: 1px solid #eeeeee;
+    margin-right: 6px;
+    margin-left: 58px;
+    padding-top: 58px;
+    padding-bottom: 19px;
+    color: #999999;
+    font-size: 14px;
+}
+
+.khfw a:last-child {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.khfw a::after {
+    content: '';
+    position: absolute;
+    top: 22px;
+    left: 32px;
+    width: 29px;
+    height: 27px;
+    background: url(../img/sprites.png) no-repeat -250px -70px;
+    transition: all 0.3s;
+}
+
+.khfw a:hover {
+    color: #27ba9b;
+}
+
+.khfw a:hover::after {
+    background-position: -205px -70px;
+}
+
+.khfw a:last-child::after {
+    background: url(../img/sprites.png) no-repeat -350px -70px;
+}
+
+.khfw a:last-child:hover::after {
+    background-position: -299px -70px;
+}
+
+/* 关注我们模块 */
+.khfw .gzh::after {
+    content: '';
+    position: absolute;
+    top: 19px;
+    left: 29px;
+    width: 36px;
+    height: 29px;
+    background: url(../img/sprites.png) no-repeat -249px -14px;
+}
+
+.khfw .gzh:hover::after {
+    background-position: -204px -14px;
+}
+
+.xtx-contact .khfw .wb::after {
+    content: '';
+    position: absolute;
+    top: 19px;
+    left: 29px;
+    width: 36px;
+    height: 29px;
+    background: url(../img/sprites.png) no-repeat -349px -14px;
+}
+
+.xtx-contact .khfw .wb:hover::after {
+    background-position: -299px -14px;
+}
+
+/* 下载APP模块 */
+.xtx-contact .xz {
+    float: left;
+    width: 25%;
+    height: 189px;
+    text-align: center;
+    border-right: 2px solid #f2f2f2;
+}
+
+.xz .ewm {
+    float: left;
+    width: 116px;
+    height: 116px;
+    margin-left: 33px;
+    margin-right: 23px;
+    border: 1px solid #cccccc;
+}
+
+.xz .ewm img {
+    width: 105px;
+    height: 103px;
+    margin-left: 1px;
+    margin-top: 5px;
+}
+
+.xz p {
+    font-size: 14px;
+    color: #999999;
+    text-align: left;
+}
+
+.wz {
+    padding-top: 13px;
+}
+
+.xz a {
+    float: left;
+    display: block;
+    width: 103px;
+    height: 32px;
+    line-height: 32px;
+    font-size: 14px;
+    color: #ffffff;
+    background-color: #27ba9b;
+    margin-top: 18px;
+}
+
+/* 服务热线模块 */
+.fwrx {
+    float: left;
+    width: 25%;
+    text-align: center;
+}
+
+.fwrx h4 {
+    font-size: 16px;
+    color: #999999;
+    margin-bottom: 50px;
+}
+
+.fwrx h3 {
+    font-size: 22px;
+    color: #666666;
+}
+
+.fwrx p {
+    font-size: 15px;
+    color: #999999;
+}
+
+/* 底部头模块结束 */
+
+/* 底部尾模块开始 */
+.footer-bd {
+    height: 343px;
+    background-color: #333333;
+}
+
+.xtx-service {
+    width: 1393px;
+    height: 174px;
+    /* padding-top: 60px; */
+    margin: 0 auto;
+    border-bottom: 1px solid #434343;
+}
+
+.xtx-service h1 {
+    float: left;
+    width: 33.3%;
+    height: 174px;
+    text-align: center;
+    line-height: 174px;
+    font-size: 28px;
+    color: #ffffff;
+    font-weight: 400;
+}
+
+.xtx-service h1::before {
+    content: '';
+    display: inline-block;
+    width: 58px;
+    height: 58px;
+    /* 图片与文字垂直居中对齐 */
+    vertical-align: middle;
+    margin-right: 20px;
+    background: url(../img/sprites.png) no-repeat 0px 0px;
+}
+
+.xtx-service h1:nth-child(2)::before {
+    background: url(../img/sprites.png) no-repeat -129px 0px;
+}
+
+.xtx-service h1:nth-child(3)::before {
+    background: url(../img/sprites.png) no-repeat -63px 0px;
+}
+
+.xtx-copyright {
+    width: 557px;
+    font-size: 14px;
+    color: #999999;
+    margin: 41px auto;
+    text-align: center;
+    line-height: 32px;
+}
+
+.xtx-copyright a {
+    color: #999999;
+    margin: 0 5px;
+}
+
+
+/* 底部尾模块结束 */
